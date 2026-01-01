@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: vamsi032/sirigiri:dbimage
+   image: vamsi032/no:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: vamsi032/sirigiri:appimage
+   image: vamsi032/no:appimage
    ports:
      - "1111:8080"
    depends_on:
